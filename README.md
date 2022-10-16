@@ -15,4 +15,4 @@ Instructions below are for use with the [P1-dongle](https://github.com/plan-d-io
 ## Functionality
 Every 2 seconds, the firmware will output the example meter telegram from the [DSMR 5.0.2 P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf). The values for actual power are randomised and the values for energy offtake continously increment, allowing end-to-end data pipeline verification. When the telegram is being sent, the Arduino LED will light up.
 
-If using the P1-dongle, the dongle LED will stop flashing if the dongle has succesfully received and verified the meter telegram. See [Basic LED signals](https://github.com/plan-d-io/P1-dongle/wiki/Basic:-LED-signals)/
+If using the P1-dongle, the dongle LED will stop flashing if the dongle has succesfully received and verified the meter telegram. See [Basic LED signals](https://github.com/plan-d-io/P1-dongle/wiki/Basic:-LED-signals).
