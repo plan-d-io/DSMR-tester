@@ -7,9 +7,12 @@ Instructions below are for use with the [P1-dongle](https://github.com/plan-d-io
 2. Connect the `GND` pins of the Arduino and the P1 dongle
 3. Connect pin `3` of the Arduino to the `Rx` pin of the P1-dongle
 
+![](https://raw.githubusercontent.com/wiki/plan-d-io/DSMR-tester/images/connection.png)
+
 >Optionally, you can also connect the 5V pins of the Arduino and the dongle to provide power to the dongle. **Do not do this if you are powering the dongle through USB.** 
 >If you are powering the Arduino through USB, it's possible the Arduino will not be able to provide enough power for the dongle to work reliably. 
 
+## Functionality
 Every 2 seconds, the firmware will output the example meter telegram from the [DSMR 5.0.2 P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf). The values for actual power are randomised and the values for energy offtake continously increment, allowing end-to-end data pipeline verification. When the telegram is being sent, the Arduino LED will light up.
 
 If using the P1-dongle, the LED will stop flashing if the dongle has succesfully received and verified the meter telegram. See [Basic LED signals](https://github.com/plan-d-io/P1-dongle/wiki/Basic:-LED-signals)/
