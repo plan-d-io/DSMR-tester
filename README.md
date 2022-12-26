@@ -13,6 +13,6 @@ Instructions below are for use with the [P1-dongle](https://github.com/plan-d-io
 >If you are powering the Arduino through USB, it's possible the Arduino will not be able to provide enough power for the dongle to work reliably. 
 
 ## Functionality
-Every 2 seconds, the firmware will output the example meter telegram from the [DSMR 5.0.2 P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf). The values for actual power are randomised and the values for energy offtake increment continously, allowing end-to-end data pipeline verification. When the telegram is being sent, the Arduino LED will light up.
+Every 2 seconds, the firmware will output a meter telegram based on the [eMUCs – P1 specification](https://maakjemeterslim.be/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0lEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cdd9b48fd0838e89b177f03b745b23450fd8f53e/e-MUCS_P1_Ed_1_7_1.pdf?disposition=attachment) and the [DSMR 5.0.2 P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf). The values for actual power are randomised and the values for energy offtake increment continously, allowing end-to-end data pipeline verification. When the telegram is being sent, the Arduino LED will light up.
 
 If using the P1-dongle, the dongle LED will stop flashing if the dongle has succesfully received and verified the meter telegram. See [Basic LED signals](https://github.com/plan-d-io/P1-dongle/wiki/Basic:-LED-signals).
