@@ -73,14 +73,14 @@ void loop() {
   mySerial.println("0-0:96.1.1(4B384547303034303436333935353037)"); //Equipment ID
   mySerial.println(energy); //Consumed energy tariff 1
   mySerial.println("1-0:1.8.2(123456.789*kWh)"); //Consumed energy tariff 2
-  Serial.println(injection); //Injected energy tariff 1
-  Serial.println("1-0:2.8.2(123456.789*kWh)"); //Injected energy tariff 2
-  Serial.println("0-0:96.14.0(0002)"); //Active tariff period
-  Serial.println(power); //Consumed active power
-  Serial.println("1-0:2.7.0(00.000*kW)"); //Injected active power
-  Serial.println("1-0:1.4.0((02.351*kW)"); //Current average demand
-  Serial.println("1-0:1.6.0(200509134558S)(02.589*kW)"); //Maximum demand of the running month
-  Serial.println("0-0:98.1.0(3)(1-0:1.6.0)(1-0:1.6.0)(200501000000S)(200423192538S)(03.695*kW)(200401000000S)(200305122139S)(05.980*kW)(200301000000S)(200210035421W)(04.318*kW)"); //Maximum demand of the last 13 months
+  mySerial.println(injection); //Injected energy tariff 1
+  mySerial.println("1-0:2.8.2(123456.789*kWh)"); //Injected energy tariff 2
+  mySerial.println("0-0:96.14.0(0002)"); //Active tariff period
+  mySerial.println(power); //Consumed active power
+  mySerial.println("1-0:2.7.0(00.000*kW)"); //Injected active power
+  mySerial.println("1-0:1.4.0((02.351*kW)"); //Current average demand
+  mySerial.println("1-0:1.6.0(200509134558S)(02.589*kW)"); //Maximum demand of the running month
+  mySerial.println("0-0:98.1.0(3)(1-0:1.6.0)(1-0:1.6.0)(200501000000S)(200423192538S)(03.695*kW)(200401000000S)(200305122139S)(05.980*kW)(200301000000S)(200210035421W)(04.318*kW)"); //Maximum demand of the last 13 months
   mySerial.println("0-0:96.13.0(303132333435363738393A3B3C3D3E3F303132333435363738393A3B3C3D3E3F303132333435363738393A3B3C3D3E3F303132333435363738393A3B3C3D3E3F303132333435363738393A3B3C3D3E3F)"); //Text message
   mySerial.println("1-0:32.7.0(220.1*V)"); //Instantaneous voltage L1
   mySerial.println("1-0:52.7.0(220.2*V)"); //Instantaneous voltage L2
